@@ -27,7 +27,7 @@
         <url/>
     </scm>
     <properties>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
         <!-- Maven plugins -->
         <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
         <frontend-maven-plugin.nodeVersion>v20.15.1</frontend-maven-plugin.nodeVersion>
@@ -79,17 +79,6 @@
         </dependency>
     </dependencies>
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <excludes>
-                    <exclude>**/*.html</exclude>
-                    <exclude>**/*.css</exclude>
-                    <exclude>**/*.js</exclude>
-                    <exclude>**/*.svg</exclude>
-                </excludes>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
